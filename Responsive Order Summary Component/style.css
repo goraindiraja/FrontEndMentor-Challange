@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background: url('./images/pattern-background-desktop.svg') repeat-x;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    border: 1px solid red;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 90vh;
+    border: 1px solid red;
+}
+
+/* Card  */
+.card{
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%,0.15);
+    border-radius: 10px;
+    background-color: white;
+    max-width: 400px;
+    border: 1px solid red;
+}
+
+img{
+    border-radius: 10px 10px 0 0;
+}
+
+.card p {
+    font-weight: 500;
+}
+
+.card-body {
+    padding: 1px 30px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+    cursor: pointer;
+    padding: 12px;
+    font-weight: 700;
+}
+
+button.primary {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+button.primary:hover {
+    opacity: 80%;
+}
+
+button.secondary {
+    border: none;
+    background-color: transparent;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: hsl(224, 23%, 55%);
+}
+
+button.secondary:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.pricing {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 16px;
+    padding: 4px;
+}
+
+.pricing p {
+    text-align: left;
+}
+
+.pricing p span {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.pricing a {
+    color: hsl(245, 75%, 52%);;
+}
+
+.pricing a:hover {
+    opacity: 60%;
+    text-decoration: none;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        max-width: 95%;
+    }
+
+    body {
+        background: url('./images/pattern-background-mobile.svg')
+        var(--color-pale-blue) no-repeat;
+    }
+
+    .card .card-body {
+        padding: 18px;
+    }
+}

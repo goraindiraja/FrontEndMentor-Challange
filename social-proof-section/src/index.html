@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="/src/style/output.css">
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="backgroundImage font-body">
+    <main class="container mx-auto px-20 max-sm:px-5">
+      <section class="flex flex-row items-center justify-between mt-20 max-sm:flex-col">
+        <!-- Title Section -->
+        <div class="w-1/2 space-y-6 max-sm:w-full">
+          <h1 class="text-5xl max-sm:text-center max-sm:w-full text-vd-magenta font-bold w-3/5">10,000+ of our users love our products.</h1>
+          <p class="text-lg text-dark-magenta w-4/5 max-sm:w-full max-sm:text-center">
+            We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.
+          </p>
+        </div>
+        <!-- End Title Section -->
+
+        <!-- Rating Card Section -->
+        <div class="w-1/2 space-y-6 max-sm:w-full max-sm:space-y-3 max-sm:mt-8">
+          <!-- Rating Card 1 -->
+          <div class="bg-light-magenta rounded-xl flex gap-8 items-center px-6 py-4 w-3/4 max-sm:w-full max-sm:flex-col max-sm:gap-4">
+            <div class="flex gap-1">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+            </div>
+
+            <p class="text-lg text-vd-magenta font-bold">Rated 5 Stars in Reviews</p>
+          </div>
+          <!-- End Rating Card 1 -->
+
+          <!-- Rating Card 2 -->
+          <div class="bg-light-magenta rounded-xl flex gap-8 items-center px-6 py-4 w-3/4 relative left-16 max-sm:w-full max-sm:flex-col max-sm:gap-4 max-sm:static">
+            <div class="flex gap-1">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+            </div>
+            <p class="text-lg text-vd-magenta font-bold">Rated 5 Stars in Report Guru</p>
+          </div>
+          <!-- End Rating Card 2 -->
+
+          <!-- Rating Card 3 -->
+          <div class="bg-light-magenta rounded-xl flex gap-8 items-center px-6 py-4 w-3/4 relative left-32 max-sm:w-full max-sm:flex-col max-sm:gap-4 max-sm:static">
+            <div class="flex gap-1">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+              <img src="/assets/images/icon-star.svg" alt="">
+            </div>
+            <p class="text-lg text-vd-magenta font-bold">Rated 5 Stars in BestTech</p>
+          </div>
+          <!-- End Rating Card 3 -->
+        </div>
+        <!-- End Rating Card Section -->
+      </section>
+      
+      <!-- Testimony Grid -->
+      <section class="grid grid-cols-3 gap-8 mt-12 max-sm:grid-cols-1">
+        <!-- Testimony Card 1 -->
+        <article class="bg-vd-magenta px-8 py-8 rounded-lg">
+          <div class="flex items-center gap-4">
+            <img 
+              src="/assets/images/image-colton.jpg"
+              alt="profile-photo" 
+              width="40" 
+              height="40"
+              class="rounded-full" 
+            >
+            <div>
+              <h3 class="font-bold text-white">Colton Smith</h3>
+              <p class="text-pink">Verified Buyer</p>
+            </div>
+          </div>
+
+          <p class="mt-4 text-white">
+            "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
+          </p>
+        </article>
+        <!-- End Testimony Card 1 -->
+
+        <!-- Testimony Card 2 -->
+        <article class="bg-vd-magenta px-8 py-8 rounded-lg relative top-6">
+          <div class="flex items-center gap-4">
+            <img 
+              src="/assets/images/image-irene.jpg" 
+              alt="profile-photo"
+              width="40"
+              height="40"
+              class="rounded-full"
+            >
+            <div>
+              <h3 class="font-bold text-white">Irene Roberts</h3>
+              <p class="text-pink">Verified Buyer</p>
+            </div>
+          </div>
+
+          <p class="mt-4 text-white">
+            "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
+          </p>
+        </article>
+        <!-- End Testimony Card 2 -->
+
+        <!-- Testimony Card 3 -->
+        <article class="bg-vd-magenta px-8 py-8 rounded-lg relative top-12">
+          <div class="flex items-center gap-4">
+            <img 
+              src="/assets/images/image-anne.jpg" 
+              alt="profile-photo"
+              width="40",
+              height="40",
+              class="rounded-full"
+            >
+            <div>
+              <h3 class="font-bold text-white">Anne Wallace</h3>
+              <p class="text-pink">Verified Buyer</p>
+            </div>
+          </div>
+
+          <p class="mt-4 text-white">
+            "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
+          </p>
+        </article>
+        <!-- End Testimony Card 3 -->
+      </section>
+      <!-- End Testimony Grid -->
+    </main>
+  </body>
+</html>

@@ -6,7 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
-  weight: ['300', '600', '800']
+  // weight: ['300', '600', '800'],
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -20,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={nunitoSans.className}>
+    <html lang="en" className={nunitoSans.className}>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -29,7 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header/>
-          {children}
+            {children}
         </ThemeProvider>
       </body>
     </html>

@@ -18,7 +18,6 @@ interface NativeName {
 
 export default async function page ({params} : {params: Params}){
   const name = params.name
-  console.log(name);
 
   const fetchData = async () => {
     const response = await fetch('https://restcountries.com/v3.1/alpha/' + name, {

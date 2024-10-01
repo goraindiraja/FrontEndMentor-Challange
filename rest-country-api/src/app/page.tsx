@@ -71,7 +71,10 @@ export interface Country {
     png: string;
     svg: string;
   };
-  coatOfArms: {};
+  coatOfArms: {
+    png: string;
+    svg: string;
+  };
   startOfWeek: string;
   capitalInfo: {
     latlng: number[];
@@ -83,8 +86,6 @@ export default function Home() {
   const [countries, setCountries] = useState<Country[]>([])
   const [search, setSearch] = useState('')
   const [selectedRegion, setSelectedRegion] = useState('')
-
-  console.log(selectedRegion);
   
   useEffect(()=>{
     const fetchData = async () => {
@@ -125,7 +126,7 @@ export default function Home() {
   const filteredCountries = countries.filter((country) =>
     country.name.common.toLowerCase().includes(search.toLowerCase())
   );
-  
+
   return (
     <main className="container mx-auto p-4">
       <section>

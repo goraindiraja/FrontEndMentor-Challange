@@ -58,9 +58,9 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		}
   	},
-	fontFamily: {
-		'nunito': ['Nunito Sans', 'sans-serif']
-	}
+	// fontFamily: {
+	// 	'nunito': ['Nunito Sans', 'sans-serif']
+	// }
   },
   plugins: [require("tailwindcss-animate")],
 };

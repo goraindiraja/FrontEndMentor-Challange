@@ -3,9 +3,17 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import React from 'react'
 import { IoIosArrowRoundBack } from 'react-icons/io';
+import { Country } from '../page';
 
 type Params = {
     name: string
+}
+
+interface NativeName {
+  [key: string]: {
+    official: string;
+    common: string;
+  };
 }
 
 export default async function page ({params} : {params: Params}){
@@ -24,13 +32,13 @@ export default async function page ({params} : {params: Params}){
     return result
   }
 
-  const getNativeName = (nativeName: any) => {
+  const getNativeName = (nativeName: NativeName) => {
     const lastCommonNativeName = Object.keys(nativeName).reduce((acc, key) => nativeName[key].common, '');
 
     return lastCommonNativeName
   }
 
-  const getCurrency = (currency: any) => {
+  const getCurrency = (currency: Country['currencies']) => {
     const currencyKey = Object.keys(currency)[0];
     const currencyName = currency[currencyKey].name;
 

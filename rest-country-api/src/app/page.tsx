@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import {useEffect, useState } from "react";
 import { IoIosSearch } from "react-icons/io";
 
-interface Country {
+export interface Country {
   name: {
     common: string;
     official: string;

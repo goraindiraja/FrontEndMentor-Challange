@@ -57,7 +57,10 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
-  	}
+  	},
+	fontFamily: {
+		'nunito': ['Nunito Sans', 'sans-serif']
+	}
   },
   plugins: [require("tailwindcss-animate")],
 };

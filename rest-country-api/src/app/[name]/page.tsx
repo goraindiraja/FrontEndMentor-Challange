@@ -91,8 +91,8 @@ export default async function page ({params} : {params: Params}){
             <h1 className='font-semibold'>Border Countries:</h1>
 
             <div className='grid grid-cols-4 gap-4'>
-              {data[0]?.borders?.map((border: string) => {
-                return <CountryBorderButton code={border}/>
+              {data[0]?.borders?.map((border: string, index: number) => {
+                return <CountryBorderButton key={index} code={border}/>
               })}
             </div>
           </div>

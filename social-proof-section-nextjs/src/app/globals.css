@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-magenta: hsl(300, 43%, 22%);
+  --primary-pink: hsl(333, 80%, 67%);
+  --dark-magenta: hsl(303, 10%, 53%);
+  --light-magenta: hsl(300, 24%, 96%);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-size: 15px;
+}
+
+@layer components {
+    .background-image {
+        background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0vw 0vh, 30vw 10vh;
+    }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

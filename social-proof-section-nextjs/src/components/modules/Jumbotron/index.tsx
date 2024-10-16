@@ -26,7 +26,8 @@ const Jumbotron = () => {
                     render={(item, index) => (
                     <div
                         key={index}
-                        className={`bg-lightMagenta rounded-md px-6 py-4 w-full flex flex-col items-center gap-4 sm:flex-row sm:max-w-md sm:gap-8 static sm:relative left-${index * 16}`}
+                        className={`bg-lightMagenta rounded-md px-6 py-4 w-full flex flex-col items-center gap-4 sm:flex-row sm:max-w-md sm:gap-8 static sm:relative`}
+                        style={{ left: `${index * 4}rem !important` }}
                     >
                         <div className="flex gap-1">
                             {generateRatingStar(item.rating)}

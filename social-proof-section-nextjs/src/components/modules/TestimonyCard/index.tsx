@@ -10,7 +10,8 @@ const TestimonyCard = () => {
         render={(item, index) => (
           <article
             key={index}
-            className={`bg-primaryMagenta p-8 rounded-lg sm:relative top-${index*6}`}
+            className={`bg-primaryMagenta p-8 rounded-lg static sm:relative`}
+            style={{ top: `${index * 2}rem !important` }}
           >
             <div className="flex items-center gap-4">
               <img
